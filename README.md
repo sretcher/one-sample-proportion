@@ -27,7 +27,7 @@ To see if our sample is large enough, we need the number of failures and success
 ### Hypothesis Testing
 For this experiment, the sample proportion is 506/755 = .67. We need to calculate the number of standard deviation units between p-hat and our null hypothesis value. Since the standard error of p-hat is sqrt(po\*qo/n), we can calculate our test statistic z = (.67 - .7) / sqrt(.7 * .3 / 755) = −1.79880913. Using a rejection region, we find that the z value corresponding to an area of .01 is 2.3263. Since -1.79880913 < 2.3263, we do not reject the null hypothesis. Using a table, we find that the p-value for our test statistic is .5 + .4633 = 0.9633. 
 
-We construct a 99% one sided confidence interval with the formula .67 - 2.3263( sqrt (.67 \*.33 / 755) ) = (.63, Inf). For this formula, we use p-hat and q-hat since they approximate the value of corresponding parameters for large sample. We are 99% confident that the true value of p is within the interval (.63, Inf). Looking at the results from JMP and R, our results are very similiar. JMP and R conduct Chi-Square Tests of Independence, which are mathmatically the same as our z-test. 
+We construct a 99% one sided confidence interval with the formula .67 - 2.3263( sqrt (.67 \*.33 / 755) ) = (.63, Inf). For this formula, we use p-hat and q-hat since they approximate the value of corresponding parameters for large samples. We are 99% confident that the true value of p is within the interval (.63, Inf). Looking at the results from JMP and R, our results are very similiar. JMP and R conduct Chi-Square Tests of Independence, which are mathmatically the same as our z-test. 
 
 ![test](proportion-test.png)
 
