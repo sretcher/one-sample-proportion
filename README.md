@@ -29,7 +29,7 @@ For this experiment, the sample proportion is 506/755 = .67. We need to calculat
 
 We construct a 99% one sided confidence interval with the formula .67 - 2.3263( sqrt (.67 \*.33 / 755) ) = (-Inf, .63). For this formula, we use p-hat and q-hat since they approximate the value of corresponding parameters for large sample. Looking at the results from JMP and R, our results are very similiar. JMP and R conduct Chi-Square Test of Independences, which are mathmatically the same as our z-test. 
 
-![test](proportion-test)
+![test](proportion-test.png)
 
 ```
 prop.test(x=506, n = 755, p = .7,alternative = "greater",conf.level = .99)
