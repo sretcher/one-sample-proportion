@@ -20,7 +20,13 @@ Ha: p > .7
 
 The number x of the 755 adults who pay for music is a binomial variable assuming that the survey for each adult is identical and that the sample was randomly selected from the population of adults who use the Internet. 
 
-We know that the mean of the sampling distribution of p-hat is equal to p, so we will use p-hat as an unbiased estimator for p. Since p-hat is really the sample mean of successes for the binomial trials, we know that the sampling distribution will be normal for large sample sizes. To see if our sample is large enough, we need the number of failures and successes in the sample to be greater than 15. The null hypothesis value .7 is assumed to be the true value of p until the test indicates otherwise. Since (755)(.7) = 528.5 and (755)(1-.7) = 226.5, our sample size is large enough to make the sampling distribution of p-hat normal. Consequently, we can use the standard normal z as a test statistic. 
+We know that the mean of the sampling distribution of p-hat is equal to p, so we will use p-hat as an unbiased estimator for p. Since p-hat is really the sample mean of successes for the binomial trials, we know that the sampling distribution will be normal for large sample sizes. 
+
+To see if our sample is large enough, we need the number of failures and successes in the sample to be greater than 15. The null hypothesis value .7 is assumed to be the true value of p until the test indicates otherwise. Since (755)(.7) = 528.5 and (755)(1-.7) = 226.5, our sample size is large enough to make the sampling distribution of p-hat normal. Consequently, we can use the standard normal z as a test statistic. 
 
 #### Hypothesis Testing
-For this experiment, the sample proportion is 506/755 = .67. We need to calculate the number of standard deviation units between p-hat in our null hypothesis value. Since the standard error of p-hat is sqrt(po\*qo/n), we can calculate our test statistic z = (.67 - .7) / sqrt(.7 * .3 / 755)
+For this experiment, the sample proportion is 506/755 = .67. We need to calculate the number of standard deviation units between p-hat and our null hypothesis value. Since the standard error of p-hat is sqrt(po\*qo/n), we can calculate our test statistic z = (.67 - .7) / sqrt(.7 * .3 / 755) = −1.79880913. Using a rejection region, we find that the z value corresponding to an area of .01 is 2.3263. Since -1.79880913 < 2.3263, we do not reject the null hypothesis. Using a table, we find that the p-value for our test statistic is .5 + .4633 = 0.9633. 
+
+We construct a 99% one sided confidence interval with the formula .67 - 2.3263( sqrt (.67 \*.33 / 755) ) = (-Inf, .63). For this formula, we use p-hat and q-hat since they approximate the value of corresponding parameters for large sample. Looking at the results from JMP and R, our results are very similiar. JMP and R conduct Chi-Square Test of Independences, which are mathmatically the same as our z-test. 
+
+
