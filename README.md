@@ -2,18 +2,18 @@ Spencer Retcher
 [sretcher.github.io](https://github.com/sretcher/sretcher.github.io)
 
 
-#### One Sample Proportion Test
+### One Sample Proportion Test
 
 In a *Pew Internet and American Life Project Survey*, 755 randomly selected adults who use the Internet were asked if they have ever paid to access or download music. Of the 755 adults, 506 stated that they have paid for music. We will be using a one sample Z-test/Chi-Square Test of Independence to test whether the true porportion of all Internet using adults who have paid to access or download music exceeds .7. 
 
-#### Large Sample Test of Hypothesis about p
+### Large Sample Test of Hypothesis about p
 We will let p represent the probability that an adult who uses the Internet pays for music. For this test, we will use a level of significance of .01. 
 
 Ho: p = .7
 
 Ha: p > .7
 
-#### Conditions Required for a Valid Large-Sample Hypothesis for p
+### Conditions Required for a Valid Large-Sample Hypothesis for p
 
 1. A random sample is selected from a binomial population.
 2. The sample size is large (npo >= 15) and (nqo >= 15)
@@ -24,7 +24,7 @@ We know that the mean of the sampling distribution of p-hat is equal to p, so we
 
 To see if our sample is large enough, we need the number of failures and successes in the sample to be greater than 15. The null hypothesis value .7 is assumed to be the true value of p until the test indicates otherwise. Since (755)(.7) = 528.5 and (755)(1-.7) = 226.5, our sample size is large enough to make the sampling distribution of p-hat normal. Consequently, we can use the standard normal z as a test statistic. 
 
-#### Hypothesis Testing
+### Hypothesis Testing
 For this experiment, the sample proportion is 506/755 = .67. We need to calculate the number of standard deviation units between p-hat and our null hypothesis value. Since the standard error of p-hat is sqrt(po\*qo/n), we can calculate our test statistic z = (.67 - .7) / sqrt(.7 * .3 / 755) = −1.79880913. Using a rejection region, we find that the z value corresponding to an area of .01 is 2.3263. Since -1.79880913 < 2.3263, we do not reject the null hypothesis. Using a table, we find that the p-value for our test statistic is .5 + .4633 = 0.9633. 
 
 We construct a 99% one sided confidence interval with the formula .67 - 2.3263( sqrt (.67 \*.33 / 755) ) = (-Inf, .63). For this formula, we use p-hat and q-hat since they approximate the value of corresponding parameters for large sample. Looking at the results from JMP and R, our results are very similiar. JMP and R conduct Chi-Square Test of Independences, which are mathmatically the same as our z-test. 
