@@ -2,18 +2,18 @@ Spencer Retcher
 [sretcher.github.io](https://github.com/sretcher/sretcher.github.io)
 
 
-### One Sample Proportion Test
+#### One Sample Proportion Test
 
 In a *Pew Internet and American Life Project Survey*, 755 randomly selected adults who use the Internet were asked if they have ever paid to access or download music. Of the 755 adults, 506 stated that they have paid for music. We will be using a one sample Z-test/Chi-Square Test of Independence to test whether the true porportion of all Internet using adults who have paid to access or download music exceeds .7. 
 
-### Large Sample Test of Hypothesis about p
+#### Large Sample Test of Hypothesis about p
 We will let p represent the probability that an adult who uses the Internet pays for music. For this test, we will use a level of significance of .01. 
 
 Ho: p = .7
 
 Ha: p > .7
 
-### Conditions Required for a Valid Large-Sample Hypothesis for p
+#### Conditions Required for a Valid Large-Sample Hypothesis for p
 
 1. A random sample is selected from a binomial population.
 2. The sample size is large (npo >= 15) and (nqo >= 15)
